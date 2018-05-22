@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  div.customcontainer 
+    div.topTitle
+     h2 Opportunities
+    div.panel.panel-info
+        div.panel-heading 
+        div.panel-body 
+            table.table.table-hover
+              tr
+                th Name
+                th Close Date
+                th Stage Name
+             
+              each record in records 
+                tr                 
+                  td #{record.Name}
+                  td #{record.CloseDate}
+                  td #{record.StageName}
+                 

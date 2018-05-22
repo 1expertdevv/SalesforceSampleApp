@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #ecf0f5;
+}
+a{
+    color: #ffffff;
+}
+.customcontainer{
+    padding: 0 15px;
+}
+
+img{
+    width:100px;
+    height: 100px;
+}
+h1{
+    color: white;
+    
+  }
+  p {
+    color: #727570;
+    
+}
+.btn-info {
+    float: right;
+    margin-right:25px;
+    margin-left: 25%;
+}
+
+.panel.panel-info{
+    margin-top:15px;
+}
+
+.leftSideBar{background: #232d32;
+    width: 200px;
+    height: calc(100vh - 51px);
+    position: fixed;
+    left: 0px;
+    top: 51px;
+    overflow: auto;
+    padding: 20px 10px;
+}
+.leftSideBar ul{-webkit-padding-start: 0px;}
+.leftSideBar ul li{list-style: none; color:#eaeaea; padding:8px 8px;}
+.leftSideBar ul li:hover{background: rgba(0,0,0,0.7);}
+.content-container{
+    float: right;
+    width: calc(100% - 200px);
+    margin-top: 51px;
+}
+
+.homeIcon{padding-right: 10px;
+    font-size: 17px;}
+.toggle-btn-sidebar{float: left;
+    padding: 14px 10px;}
+.toggle-btn-sidebar .fa{font-size:20px; color:#fff}
+.navbar-inverse{border-color:transparent !important; background-color: #3c8dbc;}
+.navbar-inverse .navbar-brand{color:#fff; padding: 14px 33px;
+    background: #44a0d6;}
+    .panel-info>.panel-heading {
+        color: #2f2f2f;
+    background-color: #ffffff;
+    border-color: #3e8dbc;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid transparent !important;
+    border-top: 3px solid #3e8dbc;
+    }
+    .panel-info {
+        border-color: #cccccc;
+    }
+    
+    .topTitle h2{
+        font-size: 24px;
+        color: #333;
+    margin-top: 20px;}

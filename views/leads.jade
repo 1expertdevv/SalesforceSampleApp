@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  div.customcontainer 
+    div.topTitle
+     h2 Leads
+    div.panel.panel-info
+        div.panel-heading 
+        div.panel-body 
+            table.table.table-hover
+              tr
+                th Name
+                th Email
+                th Phone
+                th Company
+                th Status
+                th Description
+              each record in records 
+                tr                 
+                  td #{record.Name}
+                  td #{record.Email}
+                  td #{record.Phone}
+                  td #{record.Company}
+                  td #{record.Status}
+                  td #{record.Description}

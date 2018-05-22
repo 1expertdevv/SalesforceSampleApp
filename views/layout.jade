@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title=title
+    link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='./stylesheets/style.css')
+ 
+  body
+      nav.navbar.navbar-inverse.navbar-fixed-top
+        div.container-fluid
+          div.navbar-header
+            a.navbar-brand(href="/") Salesforce
+            div.toggle-btn-sidebar
+              i.fa.fa-bars
+                          
+      div.leftSideBar
+        ul
+          li 
+           span.fa.fa.fa-dashboard.homeIcon
+           a(href="/") Dashboard 
+           li
+             span.fa.fa-home.homeIcon
+             a(href="/loan-form") Loan Form          
+            li
+             span.fa.fa-table.homeIcon
+             a(href="/Loan") Loans
+            li
+             span.fa.fa-table.homeIcon
+             a(href="/opportunities") Opportunities
+                               
+    div.content-container
+        block content
+
+
+
+  

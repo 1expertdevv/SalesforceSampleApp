@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  div.customcontainer 
+    div.topTitle
+     h2 Loans
+    div.panel.panel-info
+        div.panel-heading
+        div.panel-body 
+            table.table.table-hover
+                tr
+                th Name
+                th Address
+                th Interest Rate
+                th Loan Amount
+                th Loan Period
+                th Loan Type
+                th Phone
+                each record in records 
+                    tr                 
+                        td #{record.Name}
+                        td #{record.Address__c}
+                        td #{record.Interest_Rate__c}
+                        td #{record.Loan_Amount__c}
+                        td #{record.Loan_Period__c}
+                        td #{record.Loan_Type__c}
+                        td #{record.Phone__c}              

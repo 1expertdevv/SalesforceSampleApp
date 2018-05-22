@@ -1,0 +1,58 @@
+extends layout
+
+block content
+  div.customcontainer 
+    div.topTitle
+     h2 Loan Form
+    div.panel.panel-info
+            div.panel-heading
+            div.panel-body 
+                form(method="post" action="/loansubmition")
+                    div.form-row
+                        div.form-group.col-md-6
+                            input(type="hidden", name="_method", value="PUT")
+                            p First Name
+                            input(type="text", required, class="form-control col-sm-6", name="first_name")
+                    div.form-row
+                        div.form-group.col-md-6
+                            p Last Name
+                            input(type="text", required, class="form-control", name="last_name")
+                    div.form-row
+                        div.form-group.col-md-6
+                            p Email
+                            input(type="email", required, class="form-control", name="email")
+                    div.form-row
+                        div.form-group.col-md-6
+                            p Phone
+                            input(type="text", required, class="form-control", name="phone")
+                    div.form-row
+                        div.form-group.col-md-6
+                            p Address
+                            input(type="text", required, class="form-control", name="address")
+                    div.form-row
+                        div.form-group.col-md-6
+                            p Loan Type
+                            select(name="loan_type" required, class="form-control")                          
+                                option(value="Home") Home
+                                option(value="Personal") Personal
+                                option(value="Education") Education
+                                option(value="Automobile") Automobile
+                                option(value="Corporate") Corporate               
+                    div.form-row
+                        div.form-group.col-md-3
+                            p Loan Amount
+                            input(type="number", required, class="form-control", name="laoan_amount")
+                    div.form-row
+                        div.form-group.col-md-3
+                            p Interest Rate
+                            input(type="number", required, class="form-control", name="interest_rate")
+                    div.form-row
+                        div.form-group.col-md-3
+                            p EMI Per month
+                            input(type="number", required, class="form-control", name="emi_per_month")
+                    div.form-row
+                        div.form-group.col-md-3
+                            p Total Loan Period
+                            input(type="number", required, class="form-control", name="total_loan_period")
+                        p
+                    input(type="submit" class="btn btn-info" value="save")
